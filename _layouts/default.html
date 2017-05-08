@@ -5,19 +5,20 @@
 <head>
     <meta charset="utf-8">
     <title>MY blog!</title>
+    <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <h1>my blog</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-    </nav>
+    {% include nav.html navclass='nav-top' %}
 </header>
 
 {{content}}
+
+<footer>
+    {% include nav.html navclass='nav-bottom' %}
+</footer>
 
 </body>
 </html>

@@ -5,3 +5,9 @@ layout: default
 <p>
 this is a news page
 </p>
+
+<ul>
+    {% for post in site.posts %}
+    <li> <a href=""> {{post.title}} </li>
+    {% endfor %}
+</ul>
